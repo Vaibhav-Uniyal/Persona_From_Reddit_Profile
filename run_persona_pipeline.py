@@ -28,7 +28,14 @@ print("Sending prompt to Gemini Flash API...")
 persona_json_str = call_gemini_flash_api(api_key, prompt)
 
 # 5. Save persona JSON
+
+if persona_json_str.startswith("```json"):
+    persona_json_str = persona_json_str[len("'''json"):].lstrip()
+if persona_json_str.endswith("```"):
+    persona_json_str = persona_json_str[:-3].rstrip()
 persona_filename = f"{username}_persona.json"
+
+
 with open(persona_filename, 'w', encoding='utf-8') as f:
     f.write(persona_json_str)
 print(f"Persona JSON saved to {persona_filename}")
