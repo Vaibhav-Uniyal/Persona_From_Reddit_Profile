@@ -16,8 +16,8 @@ This project scrapes a Reddit user's posts, comments, and profile photo, generat
 
 ### 1. Clone the Repository
 ```
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/Vaibhav-Uniyal/Persona_From_Reddit_Profile.git
+cd Persona_From_Reddit_Profile
 ```
 
 ### 2. Install Dependencies
