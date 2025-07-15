@@ -22,17 +22,14 @@ cd Persona_From_Reddit_Profile
 
 ### 2. Install Dependencies
 Make sure you have Python 3.8+ installed.
-```
-pip install -r requirements.txt
-```
-If you don't have a `requirements.txt`, install manually:
+
+install manually:
 ```
 pip install praw streamlit requests python-dotenv
 ```
 
 ### 3. API Credentials
 - The required Reddit and Gemini API credentials will be provided for you.
-- Ensure your `.env` file (with the Gemini API key) and the Reddit credentials in `reddit_scraper.py` are present in the project folder.
 
 ---
 
